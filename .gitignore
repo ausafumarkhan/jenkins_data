@@ -1,2 +1,5 @@
 **/remote-key
 **/remote-key.pub
+prod
+prod.pub
+**/*log*
