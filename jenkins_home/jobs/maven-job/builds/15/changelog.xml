@@ -1,0 +1,10 @@
+commit be8311944757d25078104a65b6eecba1e7eed5fa
+tree beceabb2067cd3b64c9bbea31afa1cb1a1c4e9fd
+parent b72f505a6659ca4741a14d5eac9c2eb668578345
+author Mark Waite <mark.earl.waite@gmail.com> 2024-01-26 18:53:46 -0700
+committer Mark Waite <mark.earl.waite@gmail.com> 2024-01-26 18:53:46 -0700
+
+    Simplify deliver.sh with Apache Maven quiet and forceStdout
+
+
+:100755 100755 25b27dc7955142806c696f1efbda4bfbca58924f 39a0636699755c43a858bf269f5c26bf9189d27e M	jenkins/scripts/deliver.sh

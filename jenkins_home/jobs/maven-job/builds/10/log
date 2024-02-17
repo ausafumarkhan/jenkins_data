@@ -1,0 +1,142 @@
+Started by user [8mha:////4CM3uRzpXhuL/mAWnukRSemVKppLlyyGmJ+gEHSsmmj9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mausaf
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/maven-job
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/maven-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jenkins-docs/simple-java-maven-app.git # timeout=10
+Fetching upstream changes from https://github.com/jenkins-docs/simple-java-maven-app.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/jenkins-docs/simple-java-maven-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b72f505a6659ca4741a14d5eac9c2eb668578345 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b72f505a6659ca4741a14d5eac9c2eb668578345 # timeout=10
+Commit message: "Bump org.apache.maven.plugins:maven-compiler-plugin (#779)"
+ > git rev-list --no-walk b72f505a6659ca4741a14d5eac9c2eb668578345 # timeout=10
+[maven-job] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/jenkins-maven/bin/mvn -B -DskipTests clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ my-app ---
+[INFO] Deleting /var/jenkins_home/workspace/maven-job/target
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ my-app ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ my-app ---
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-job/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:compile (default-compile) @ my-app ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target/classes
+[8mha:////4OePPUJBDf2frnOpusY+FeTUwDyNQsQDzi5lFtvhYLU6AAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ my-app ---
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-job/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ my-app ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target/test-classes
+[8mha:////4OePPUJBDf2frnOpusY+FeTUwDyNQsQDzi5lFtvhYLU6AAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ my-app ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ my-app ---
+[INFO] Building jar: /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.545 s
+[INFO] Finished at: 2024-01-26T14:42:43Z
+[INFO] ------------------------------------------------------------------------
+[maven-job] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/jenkins-maven/bin/mvn test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ my-app ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ my-app ---
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-job/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:compile (default-compile) @ my-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ my-app ---
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-job/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.12.1:testCompile (default-testCompile) @ my-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ my-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.2.2/surefire-junit-platform-3.2.2.pom
+Progress (1): 1.4/4.5 kBProgress (1): 2.8/4.5 kBProgress (1): 4.1/4.5 kBProgress (1): 4.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.2.2/surefire-junit-platform-3.2.2.pom (4.5 kB at 6.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.2.2/surefire-providers-3.2.2.pom
+Progress (1): 1.4/2.5 kBProgress (1): 2.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.2.2/surefire-providers-3.2.2.pom (2.5 kB at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.2/common-java5-3.2.2.pom
+Progress (1): 1.4/2.7 kBProgress (1): 2.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.2/common-java5-3.2.2.pom (2.7 kB at 52 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom
+Progress (1): 1.4/3.0 kBProgress (1): 2.8/3.0 kBProgress (1): 3.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom (3.0 kB at 39 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom
+Progress (1): 1.4/3.2 kBProgress (1): 2.8/3.2 kBProgress (1): 3.2 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom (3.2 kB at 60 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom
+Progress (1): 1.4/1.7 kBProgress (1): 1.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom (1.7 kB at 33 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom
+Progress (1): 1.4/2.8 kBProgress (1): 2.8/2.8 kBProgress (1): 2.8 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom (2.8 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.2.2/surefire-junit-platform-3.2.2.jar
+Progress (1): 1.4/27 kBProgress (1): 2.8/27 kBProgress (1): 4.1/27 kBProgress (1): 5.5/27 kBProgress (1): 6.9/27 kBProgress (1): 8.3/27 kBProgress (1): 9.7/27 kBProgress (1): 11/27 kB Progress (1): 12/27 kBProgress (1): 14/27 kBProgress (1): 15/27 kBProgress (1): 17/27 kBProgress (1): 18/27 kBProgress (1): 19/27 kBProgress (1): 21/27 kBProgress (1): 22/27 kBProgress (1): 23/27 kBProgress (1): 25/27 kBProgress (1): 26/27 kBProgress (1): 27 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.2.2/surefire-junit-platform-3.2.2.jar (27 kB at 374 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.2/common-java5-3.2.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
+Progress (1): 16/18 kBProgress (1): 18 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.2.2/common-java5-3.2.2.jar (18 kB at 176 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar
+Progress (1): 16/103 kBProgress (1): 33/103 kBProgress (1): 49/103 kBProgress (2): 49/103 kB | 16/169 kBProgress (2): 66/103 kB | 16/169 kBProgress (2): 66/103 kB | 33/169 kBProgress (2): 82/103 kB | 33/169 kBProgress (2): 98/103 kB | 33/169 kBProgress (2): 103 kB | 33/169 kB                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar (103 kB at 669 kB/s)
+Progress (1): 49/169 kBProgress (1): 66/169 kBProgress (2): 66/169 kB | 16/189 kBProgress (2): 82/169 kB | 16/189 kBProgress (2): 98/169 kB | 16/189 kBProgress (2): 115/169 kB | 16/189 kBProgress (2): 115/169 kB | 33/189 kBProgress (2): 131/169 kB | 33/189 kBProgress (2): 147/169 kB | 33/189 kBProgress (2): 164/169 kB | 33/189 kBProgress (2): 169 kB | 33/189 kB                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar (169 kB at 600 kB/s)
+Progress (1): 49/189 kBProgress (1): 66/189 kBProgress (1): 82/189 kBProgress (1): 98/189 kBProgress (1): 115/189 kBProgress (1): 131/189 kBProgress (1): 147/189 kBProgress (1): 164/189 kBProgress (1): 180/189 kBProgress (2): 180/189 kB | 1.4/7.7 kBProgress (2): 180/189 kB | 2.8/7.7 kBProgress (2): 180/189 kB | 4.1/7.7 kBProgress (2): 180/189 kB | 5.5/7.7 kBProgress (2): 180/189 kB | 6.9/7.7 kBProgress (2): 180/189 kB | 7.7 kB                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar (7.7 kB at 23 kB/s)
+Progress (1): 189 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar (189 kB at 535 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.pom
+Progress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.pom (3.2 kB at 53 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.pom
+Progress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.pom (3.2 kB at 53 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar
+Progress (1): 16/245 kBProgress (1): 33/245 kBProgress (1): 49/245 kBProgress (1): 66/245 kBProgress (1): 82/245 kBProgress (1): 98/245 kBProgress (1): 115/245 kBProgress (1): 131/245 kBProgress (1): 147/245 kBProgress (1): 164/245 kBProgress (1): 180/245 kBProgress (1): 197/245 kBProgress (1): 213/245 kBProgress (1): 229/245 kBProgress (1): 245 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar (245 kB at 2.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar
+Progress (1): 16/205 kBProgress (1): 33/205 kBProgress (1): 49/205 kBProgress (1): 66/205 kBProgress (1): 82/205 kBProgress (1): 98/205 kBProgress (1): 115/205 kBProgress (1): 131/205 kBProgress (1): 147/205 kBProgress (1): 164/205 kBProgress (1): 180/205 kBProgress (1): 197/205 kBProgress (1): 205 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar (205 kB at 2.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.pom
+Progress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.pom (3.0 kB at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar
+Progress (1): 16/184 kBProgress (1): 32/184 kBProgress (1): 49/184 kBProgress (1): 65/184 kBProgress (1): 81/184 kBProgress (1): 98/184 kBProgress (1): 114/184 kBProgress (1): 130/184 kBProgress (1): 147/184 kBProgress (1): 163/184 kBProgress (1): 180/184 kBProgress (1): 184 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.1/junit-platform-launcher-1.10.1.jar (184 kB at 2.5 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mycompany.app.AppTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s -- in com.mycompany.app.AppTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.433 s
+[INFO] Finished at: 2024-01-26T14:42:52Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

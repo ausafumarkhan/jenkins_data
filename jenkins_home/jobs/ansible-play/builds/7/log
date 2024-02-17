@@ -1,0 +1,30 @@
+Started by user [8mha:////4CM3uRzpXhuL/mAWnukRSemVKppLlyyGmJ+gEHSsmmj9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mausaf
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ansible-play
+[8mha:////4LxS9DRvtSFl6Fl14U+JVxDGm9ueB+kaCBFTzw6s6aFhAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFQPDxFQLM2Nj3ZQUY0NdEwMDM92ktGRTXQOjlMRkU3MLI3NDSwCQ6Z+prwAAAA==[0m[ansible-play] $ ansible-playbook /var/jenkins_home/ansible/play.yml -i /var/jenkins_home/ansible/hosts -f 5 -e "MSG='Hello World. This is ansible'"
+
+PLAY [test1] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+[1;31mfatal: [test1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nPermissions 0664 for '/var/jenkins_home/ansible/remote-key' are too open.\r\nIt is required that your private key files are NOT accessible by others.\r\nThis private key will be ignored.\r\nLoad key \"/var/jenkins_home/ansible/remote-key\": bad permissions\r\nremote_user@remote_host: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mtest1[0m                      : ok=0    changed=0    [1;31munreachable=1   [0m failed=0    skipped=0    rescued=0    ignored=0   
+
+FATAL: command execution failed
+hudson.AbortException: Ansible playbook execution failed
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:308)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:256)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:164)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:526)
+	at hudson.model.Run.execute(Run.java:1895)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+ERROR: Ansible playbook execution failed
+Finished: FAILURE

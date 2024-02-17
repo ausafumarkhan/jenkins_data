@@ -1,0 +1,19 @@
+Started by user [8mha:////4DGLfarKt4b9IKAWgNducWISF2lWA4De2fa3qfP5lc0OAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins12719954250939574530.sh
++ echo Build number of a Job is 7
+Build number of a Job is 7
++ echo Build ID of a Job is 7
+Build ID of a Job is 7
++ echo Build Url of a Job is http://jenkins.local:8080/job/ENV/7/
+Build Url of a Job is http://jenkins.local:8080/job/ENV/7/
++ echo Name of the Job is ENV
+Name of the Job is ENV
++ echo ****************************
+****************************
++ echo User Name is ausafumar
+User Name is ausafumar
++ echo Country of a user is India
+Country of a user is India
+Finished: SUCCESS

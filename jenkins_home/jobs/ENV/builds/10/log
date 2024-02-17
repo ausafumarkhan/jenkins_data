@@ -1,0 +1,55 @@
+Started by user [8mha:////4CM3uRzpXhuL/mAWnukRSemVKppLlyyGmJ+gEHSsmmj9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mausaf
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins11638700039296868612.sh
++ echo Build number of a Job is 10
+Build number of a Job is 10
++ echo Build ID of a Job is 10
+Build ID of a Job is 10
++ echo Build Url of a Job is http://jenkins.local:8080/job/ENV/10/
+Build Url of a Job is http://jenkins.local:8080/job/ENV/10/
++ echo Name of the Job is ENV
+Name of the Job is ENV
++ echo ****************************
+****************************
++ echo1 User Name is ausafumar
+/tmp/jenkins11638700039296868612.sh: 7: echo1: not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: ausaf.khan@rakuten.com
+ERROR: Could not connect to SMTP host: smtp-mail.outlook.com, port: 587
+jakarta.mail.MessagingException: Could not connect to SMTP host: smtp-mail.outlook.com, port: 587;
+  nested exception is:
+	javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2212)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at jakarta.mail.Service.connect(Service.java:342)
+	at jakarta.mail.Service.connect(Service.java:222)
+	at jakarta.mail.Service.connect(Service.java:171)
+	at jakarta.mail.Transport.send0(Transport.java:230)
+	at jakarta.mail.Transport.send(Transport.java:100)
+	at hudson.tasks.MailSender.run(MailSender.java:131)
+	at hudson.tasks.Mailer.perform(Mailer.java:175)
+	at hudson.tasks.Mailer.perform(Mailer.java:138)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+	at hudson.model.Run.execute(Run.java:1918)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+Caused by: javax.net.ssl.SSLException: Unsupported or unrecognized SSL message
+	at java.base/sun.security.ssl.SSLSocketInputRecord.handleUnknownRecord(SSLSocketInputRecord.java:457)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:175)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:602)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:376)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 18 more
+Finished: FAILURE

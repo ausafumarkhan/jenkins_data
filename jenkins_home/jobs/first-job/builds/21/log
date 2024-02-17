@@ -1,0 +1,7 @@
+Started by user [8mha:////4OthUkvQVFLbfoUtAEfvO9bTW9Kc7irIG1W025W8VmOpAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZO/dLi1CL9kvxcAJeBIii+AAAA[0mTom Jerry
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/first-job
+[first-job] $ /bin/sh -xe /tmp/jenkins15440690488118423722.sh
++ /tmp/script.sh John Joe true
+Hello  John Joe
+Finished: SUCCESS

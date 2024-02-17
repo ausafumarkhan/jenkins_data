@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-01-29 02:21:07.252 UTC</timestamp>
+  <md5sum>526298ebc353d6cfa84dc348f0518acc</md5sum>
+  <fileName>Credential id=SECRET_TEXT name=SECRET_TEXT</fileName>
+  <usages>
+    <entry>
+      <string>pipeline</string>
+      <ranges>8</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

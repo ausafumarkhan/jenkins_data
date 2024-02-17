@@ -1,0 +1,45 @@
+Started by user [8mha:////4CM3uRzpXhuL/mAWnukRSemVKppLlyyGmJ+gEHSsmmj9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mausaf
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins2857224835177645210.sh
++ echo Build number of a Job is 13
+Build number of a Job is 13
++ echo Build ID of a Job is 13
+Build ID of a Job is 13
++ echo Build Url of a Job is http://jenkins.local:8080/job/ENV/13/
+Build Url of a Job is http://jenkins.local:8080/job/ENV/13/
++ echo Name of the Job is ENV
+Name of the Job is ENV
++ echo ****************************
+****************************
++ echo1 User Name is ausafumar
+/tmp/jenkins2857224835177645210.sh: 7: echo1: not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: ausafumarkhan@gmail.com
+ERROR: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor m6-20020a62f206000000b006dd897cd81csm1944373pfh.53 - gsmtp
+
+jakarta.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor m6-20020a62f206000000b006dd897cd81csm1944373pfh.53 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:947)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:858)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:762)
+	at jakarta.mail.Service.connect(Service.java:364)
+	at jakarta.mail.Service.connect(Service.java:222)
+	at jakarta.mail.Service.connect(Service.java:171)
+	at jakarta.mail.Transport.send0(Transport.java:230)
+	at jakarta.mail.Transport.send(Transport.java:100)
+	at hudson.tasks.MailSender.run(MailSender.java:131)
+	at hudson.tasks.Mailer.perform(Mailer.java:175)
+	at hudson.tasks.Mailer.perform(Mailer.java:138)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+	at hudson.model.Run.execute(Run.java:1918)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+Finished: FAILURE

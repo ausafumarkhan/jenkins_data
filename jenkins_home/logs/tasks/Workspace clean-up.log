@@ -1,0 +1,11 @@
+Started at Sun Jan 28 09:02:23 UTC 2024
+Checking ansible-play
+Checking ansible-user-db
+Checking ENV
+Checking first-job
+Checking job-dsl
+Checking job_dsl_created
+Checking job_dsl_example
+Checking maven-job
+Checking remote-task
+Finished at Sun Jan 28 09:02:23 UTC 2024. 98ms
