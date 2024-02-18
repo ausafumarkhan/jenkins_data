@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-02-18 14:44:31.504 UTC</timestamp>
+  <original>
+    <name>pipeline-docker-maven</name>
+    <number>39</number>
+  </original>
+  <md5sum>53c11269b53c8649e09ab27a2d7f86f8</md5sum>
+  <fileName>my-app-1.0-SNAPSHOT.jar</fileName>
+  <usages>
+    <entry>
+      <string>pipeline-docker-maven</string>
+      <ranges>39</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

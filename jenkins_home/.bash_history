@@ -1,64 +1,3 @@
-ansible
-exit
-docker ps
-exit
-pwd
-cd $HOME
-pwd
-exit
-cd $HOME
-ls
-ls ansible/
-ls ann
-ls ansible
-cd $HOME
-ls
-cd ansible/
-ls
-cat hosts 
-ping remote_host
-ansible -i hosts -m ping test1
-ls
-cd ..
-ls
-exit
-cd $HOME
-cd ansible/
-ls
-cd ..
-exit
-cd $HOME
-ls ansible/remote-key 
-ping remote_host
-ansible -i hosts -m ping test1
-ls
-cd ansible/
-ls
-cat hosts 
-ping remote_host
-ansible -i hosts -m ping test1
-sudo apt install iputils-ping
-apt install iputils-ping
-exit
-ping remote_host
-ansible -i hosts -m ping test1
-cd $HOME
-cd ansible/
-ansible -i hosts -m ping test1
-ansible -i hosts -m ping test1
-exit
-cd /tmp/
-ls
-ping remote
-ping remote-host
-ping remote_host
-ssh remote_host
-cd /etc/
-ls
-cd hosts
-cat hosts
-ping db-host
-ping db
 ping db1
 ssh remote_user@remote_host
 cd /tmp/
@@ -498,3 +437,64 @@ systemctl start docker
 service docker start
 sudo service docker start
 docker ps
+docker
+docker ps
+systemctl start docker
+ls -l /var/run/docker.sock
+cat /etc/group| grep -i docker
+sudo systemctl start docker
+docker
+docker ps
+docker ps
+docker ps
+docker ps
+docker ps
+ls /var/run/docker
+ls /var/run/docker.sock
+docker ps
+export BUILD_TAG=10
+export PASS="Hisashi_Tech05"
+cd /app
+cd /tmp/
+ls
+docker-compose
+echo $BUILD_TAG
+cd /opt/
+ll
+ls -l
+ssh
+ssh -i prod prod-user@prod-server.com
+id jenkins
+ssh -i prod prod-user@prod-server.com
+ssh -i /opt/prod prod-user@prod-server.com
+cat /etc/hosts
+vi  /etc/hosts
+vi /etc/hosts
+ssh -i /opt/prod prod-user@prod-server.com
+ssh -i /opt/prod prod-user@prod-server.com
+ssh -i /opt/prod prod-user@prod-server.com
+ssh -i /opt/prod prod-user@prod-server.com
+ssh prod-user@prod-server.com
+ssh prod-user@prod-server.com
+ssh -i /opt/prod prod-user@prod-server.com
+cd /var/jenkins_home/.ssh/
+ls
+cat remote-key 
+cat known_hosts
+ping prod-server.com
+host prod-server.com
+ip prod-server.com
+cat /etc/hosts
+
+ssh-keyscanprod-server.com
+ssh-keyscan prod-server.com
+sudo -i
+ssh -i /opt/prod prod-user@prod-server.com
+ssh-keygen -f "/var/jenkins_home/.ssh/known_hosts" -R "prod-server.com"
+cat /var/jenkins_home/.ssh/known_hosts
+ssh -i /opt/prod prod-user@prod-server.com
+cd /opt/prod
+cd /opt
+ls
+ls -l
+ssh -i /opt/prod prod-user@prod-server.com

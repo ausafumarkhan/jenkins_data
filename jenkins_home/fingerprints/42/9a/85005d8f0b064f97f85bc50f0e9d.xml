@@ -6,7 +6,7 @@
   <usages>
     <entry>
       <string>pipeline-docker-maven</string>
-      <ranges>6-8,11-15</ranges>
+      <ranges>6-8,11-44</ranges>
     </entry>
     <entry>
       <string>git-clone</string>
@@ -15,9 +15,9 @@
   </usages>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1311.vcf0a_900b_37c2">
-      <timestamp>1708236900056</timestamp>
+      <timestamp>1708272335529</timestamp>
       <itemFullName>pipeline-docker-maven</itemFullName>
-      <timestamp0>1708236481029</timestamp0>
+      <timestamp0>1708271697761</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
   </facets>
 </fingerprint>

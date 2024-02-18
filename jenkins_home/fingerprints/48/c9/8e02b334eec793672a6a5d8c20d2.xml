@@ -6,7 +6,7 @@
   <usages>
     <entry>
       <string>pipeline-docker-maven</string>
-      <ranges>8,11-15</ranges>
+      <ranges>8,11-22,29-44</ranges>
     </entry>
   </usages>
   <facets/>
