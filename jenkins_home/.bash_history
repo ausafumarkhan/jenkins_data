@@ -1,54 +1,3 @@
-cd ..
-yum install -y ping
-apt-get install pings
-apt-get install ping
-ping google.com
-apt-get update
-id jenkins
-ping remote_host
-cd /tmp/
-ls
-ls -l
-ssh -i remote-key remote_user@remote_host
-ls -l
-cd /tmp/
-ssh -i remote-key remote_user@remote_host
-ssh remote-key remote_user@remote_host
-ping remote_host
-cd /tmp/
-ssh -i remote-key -o PasswordAuthentication=no remote_user@remote_host
-ssh -i remote-key -o PasswordAuthentication=no GSSAPIKeyExchange=yes remote_user@remote_host
-ssh -i remote-key -o PasswordAuthentication=no -o GSSAPIKeyExchange=yes remote_user@remote_host
-ssh -i remote-key remote_user@remote_host
-cd /tmp/
-ssh -i remote-key remote_user@remote_host
-ls -l
-ping remote_host
-ssh -i /tmp/remote-key remote_user@remote_host
-ssh -i /tmp/remote-key remote_user@remote_host
-pip
-python --version
-exit
-curl
-python3 -m pip -V
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-curl https://bootstrap.pypa.io/get-pip.py
-ls
-python3 get-pip.py --user
-exit
-python
-apt
-exit
-python3
-exit
-pip
-curl
-git
-yum
-exit
-ansible --version
-ansible
-exit
 ansible
 exit
 docker ps
@@ -498,3 +447,54 @@ sudo service docker start
 docker pull maven:3-alpine
 sudo service docker start
 docker pull maven:3-alpine
+cd /opt
+ls
+ll
+ls -l
+ssh -i prod prod-user@prod-server.com
+cat prod 
+ls -l
+cd /etc/
+ls
+cat hosts
+vi hosts
+nano hosts
+echo "192.168.33.11 prod-server.com" >> hosts
+sudo echo "192.168.33.11 prod-server.com" >> hosts
+ssh -i /opt/prod prod-user@prod-server.com
+ssh -i /opt/prod prod-user@prod-server.com
+ls -l /opt/prod
+cd /opt/
+ssh -i prod prod-user@prod-server.com
+cat prod 
+sudo ssh -i prod prod-user@prod-server.com
+ssh -i prod prod-user@192.168.33.11
+ping prod-server.com
+ssh -i prod prod-user@prod-server.com
+docker
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+docker
+ping jenkins.local
+docker
+docker 
+systemctl start docker
+docker run --help
+docker run init
+docker run ps
+systemctl start docker
+systemctl restart docker
+systemd init
+systemd
+systemd --help
+systemctl start docker
+service docker start
+sudo service docker start
+docker ps

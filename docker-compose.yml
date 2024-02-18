@@ -37,7 +37,7 @@ services:
   networks:
    - net
  git:
-  image: gitlab/gitlab-ce:latest
+  image: gitlab/gitlab-ee:latest
   container_name: git-server
   hostname: 'gitlab.example.com'
   ports:
