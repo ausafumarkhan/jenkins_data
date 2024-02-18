@@ -5,3 +5,7 @@ prod.pub
 **/*log*
 **/*.log
 *.pem
+jenkins_home/secrets/*
+jenkins_home/.docker/*
+jenkins_home/.ssh/*
+jenkins_home/users/*
