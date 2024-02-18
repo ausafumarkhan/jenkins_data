@@ -5,4 +5,4 @@ prod.pub
 **/*log*
 **/*.log
 *.pem
-jenkins_home
+jenkins_home/
