@@ -5,3 +5,4 @@ prod.pub
 **/*log*
 **/*.log
 *.pem
+**/*.pem
