@@ -4,3 +4,4 @@ prod
 prod.pub
 **/*log*
 **/*.log
+*.pem
