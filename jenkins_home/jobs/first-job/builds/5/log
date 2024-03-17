@@ -1,8 +1,0 @@
-Started by user [8mha:////4CM3uRzpXhuL/mAWnukRSemVKppLlyyGmJ+gEHSsmmj9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mausaf
-Running as SYSTEM
-Building in workspace /var/jenkins_home/workspace/first-job
-[first-job] $ /bin/sh -xe /tmp/jenkins3978024362459556259.sh
-+ name=Faraaz
-+ date
-+ echo Hello Faraaz. Today's date is Sat Nov 25 08:58:32 UTC 2023
-Finished: SUCCESS

@@ -1,8 +1,0 @@
-Started by user [8mha:////4CM3uRzpXhuL/mAWnukRSemVKppLlyyGmJ+gEHSsmmj9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mausaf
-Running as SYSTEM
-Building in workspace /var/jenkins_home/workspace/first-job
-[first-job] $ /bin/sh -xe /tmp/jenkins3009248067463687767.sh
-+ /tmp/script.sh John Joe false
-/tmp/script.sh: line 7: [show=true]: command not found
-if you wnat to see the name, please mark show
-Finished: SUCCESS
